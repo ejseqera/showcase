@@ -97,7 +97,7 @@ Through Data Studios, you are now able to continue into the next step of your te
 
 ## Checkpoints in Data studios
 
-When working in Data Studios, a checkpoint gets created every time you start a data studio. This checkpoint allows you to restart a data studio with previously installed software and changes made to the root filesystem of the container. Please note, that if you stop a data studio and restart it, you will start from a clean session. To go back to your previously modified data studio session, please restart it from a checkpoint as highlighted in the screenshot below:
+When starting a data studio, a checkpoint gets created. This checkpoint allows you to restart a data studio with previously installed software and changes made to the root filesystem of the container. Please note, that if you stop a data studio and restart it, this will restart it from the latest checkpoint. To go back to a specific previous configuration of data studio session, please restart it from a checkpoint as highlighted in the screenshot below:
 
 ![alt text](assets/data-studio-checkpoints.png)
 
