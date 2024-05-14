@@ -28,3 +28,7 @@
     display: none;
   }
 }
+
+.md-nav__link[href="#hidden-heading"] {
+  display: none;
+}
