@@ -8,9 +8,9 @@ The full list of endpoints is available in Seqera's OpenAPI schema found [here](
 
 ![Platform access token](./assets/generate-access-token.gif)
 
-The token is only displayed once. Store your token in a safe place. Use this token to authenticate requests to the API via cURL, Postman, or within your code.
+The token is only displayed once. Store your token in a secure place. Use this token to authenticate requests to the API.
 
-For example, to launch the hello pipeline in the seqeralabs/showcase using the `/workflow/launch` endpoint:
+For example, to launch the hello pipeline in the seqeralabs/showcase using cURL:
 
 ```bash
 curl -X POST "https://api.cloud.seqera.io/workflow/launch?workspaceId=38659136604200" \
@@ -31,9 +31,9 @@ curl -X POST "https://api.cloud.seqera.io/workflow/launch?workspaceId=3865913660
 
 ### 2. Seqera Platform CLI
 
-The command line utility used to manage resources on Seqera Platform such as pipelines, runs, compute environments is called `tw`.
+Seqera Platform comes with a command line utility called `tw` to manage resources.
 
-The CLI provides an interface to launch pipelines, manage compute environments, retrieve run metadata, and monitor runs on the Platform. It provides a Nextflow-like experience for bioinformaticians to prefer the CLI, allows you store Seqera resource configuration (i.e. pipelines, compute environments) in Infrastructure-as-code, and is built on top of the [Seqera Platform API](#1-seqera-platform-api). The CLI offers more flexibility and easier interaction with the Platform, than the API.
+The CLI provides an interface to launch pipelines, manage compute environments, retrieve run metadata and monitor runs on the Platform. It provides a Nextflow-like experience for bioinformaticians who prefer the CLI, allows you store Seqera resource configuration (i.e. pipelines, compute environments) as code. The CLI is built on top of the [Seqera Platform API](#1-seqera-platform-api) but offers is simpler to use than the API. For example, you can refer to resources by name instead of unique identifier.
 
 ![Seqera Platform CLI](./assets/platform-cli.png)
 
@@ -47,7 +47,7 @@ The `tw` CLI installation and usage details can be obtained from [this](https://
 
 ### 3. seqerakit
 
-`seqerakit` is a Python wrapper for the Seqera Platform CLI which can be leveraged to automate the creation of all of the entities in Seqera Platform via a simple configuration file in YAML format.
+`seqerakit` is a Python wrapper for the Seqera Platform CLI which can be leveraged to automate the creation of all of the entities in Seqera Platform via YAML format configuration file.
 
 The key features are:
 
