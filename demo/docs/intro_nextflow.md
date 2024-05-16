@@ -1,7 +1,5 @@
 ### Introduction to Nextflow
 
-#### What is Nextflow?
-
 [Nextflow](https://www.nextflow.io/) is a workflow system for creating scalable, portable, and reproducible workflows.
 
 Nextflow is both a workflow language and an execution runtime that supports a wide range of execution platforms, including popular traditional grid scheduling systems such as Slurm and IBM LSF, and cloud services such as AWS Batch, Google Cloud Batch, Azure Batch and Kubernetes.

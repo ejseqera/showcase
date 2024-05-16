@@ -1,7 +1,5 @@
 ### Introduction to the Seqera Platform
 
-#### What is the Seqera Platform?
-
 Seqera Platform extends the capabilities of Nextflow by providing advanced monitoring, and pipeline and data management tools:
 
 - **Centralized Monitoring Dashboard**: A user-friendly interface displays all critical information, including real-time progress of each pipeline.
