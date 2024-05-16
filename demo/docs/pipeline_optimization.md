@@ -11,7 +11,7 @@ Once optimization is selected, any subsequent runs of that pipeline on the Launc
 > **NOTE:** Optimizated profiles are generated off of one run at a time, defaulting to the most recent runs, and _not_ an aggregation of previous runs.
 
 
-Navigate back to the Launchpad, click on the nf-core/rnaseq Pipeline added, and click on the 'Lightbulb' icon to view the optimized profile. You can configure which settings the optimization applies to and add a retry strategy.
+Navigate back to the Launchpad, click on the nf-core/rnaseq Pipeline added, and click on the 'Lightbulb' icon to view the optimized profile. You have the flexibility to tailor the optimization's target settings and incorporate a retry strategy as needed.
 
 ![Optimized configuration](assets/optimize-configuration.gif)
 
