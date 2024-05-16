@@ -18,7 +18,7 @@ In the repository URL, specify the nf-core/rnaseq repository:
 https://github.com/nf-core/rnaseq
 ```
 
-Additionally, specify a version of the pipeline as the 'Revision number'. You can use `3.12.0`.
+Additionally, specify a version of the pipeline as the 'Revision number'. You can use `3.14.0`.
 
 ## 3. Parameters and Nextflow Configuration
 
