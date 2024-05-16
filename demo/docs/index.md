@@ -15,27 +15,26 @@ The demonstration will focus on using the [nf-core/rnaseq](https://github.com/nf
 <!-- ![Seqera biotech stack](assets/seqera-biotech-stack.png){ .right .image} -->
 <img src="assets/seqera-biotech-stack.png" alt="Seqera biotech stack" style="float: right; width: 50%; margin-left: 30px; margin-bottom: 20px;">
 
-[:material-check-circle:]() [Why use Seqera Platform?](./intro.md) <br/>
+[:material-check-circle:]() [What is Nextflow?](./intro_nextflow.md) <br/>
+[:material-check-circle:]() [What is the Seqera Platform?](./intro_platform.md) <br/>
 [:material-check-circle:]() [Overview of the Platform](./demo_overview.md) <br/>
-[:material-check-circle:]() [Add a Pipeline to the Launchpad](./add_a_pipeline.md) <br/>
-[:material-check-circle:]() [Add a Dataset to Seqera Platform](./add_a_dataset.md) <br/>
-[:material-check-circle:]() [Launch a Pipeline](./launch_pipeline.md) <br/>
-[:material-check-circle:]() [Monitoring your run](./monitor_run.md) <br/>
+[:material-check-circle:]() [Add a pipeline to the Launchpad](./add_a_pipeline.md) <br/>
+[:material-check-circle:]() [Add a Dataset to the Platform](./add_a_dataset.md) <br/>
+[:material-check-circle:]() [Launch a pipeline](./launch_pipeline.md) <br/>
+[:material-check-circle:]() [Monitor your run](./monitor_run.md) <br/>
 [:material-check-circle:]() [Monitoring views](./monitoring_views.md) <br/>
 [:material-check-circle:]() [Examine run and task details](./run_details.md) <br/>
-[:material-check-circle:]() [Resume a Pipeline](./resume_pipeline.md) <br/>
+[:material-check-circle:]() [Resume a pipeline](./resume_pipeline.md) <br/>
 [:material-check-circle:]() [Data Explorer](./data_explorer.md) <br/>
 [:material-check-circle:]() [Data Studios](./data_studios.md) <br/>
 [:material-check-circle:]() [Optimize your Pipeline](./pipeline_optimization.md) <br/>
-[:material-check-circle:]() [Automation on Seqera Platform](./automation.md) <br/>
-[:material-check-circle:]() [Scaling Science on Seqera Platform](./summary.md) <br/>
+[:material-check-circle:]() [Automation on the Platform](./automation.md) <br/>
+[:material-check-circle:]() [Scaling Science on the Platform](./summary.md) <br/>
 <br />
 <br />
 <br />
 <br />
 <br />
-<br />
-
 ---
 
 ## Requirements
