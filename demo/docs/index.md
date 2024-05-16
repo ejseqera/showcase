@@ -38,7 +38,7 @@ More specifically, this demonstration will focus on using the [nf-core/rnaseq](h
 
 :octicons-checkbox-16: Access to a Workspace in Seqera Platform
 
-:octicons-checkbox-16: :fontawesome-brands-aws: An [AWS Batch Compute Environment created in that Workspace](https://docs.seqera.io/platform/23.3.0/compute-envs/aws-batch)
+:octicons-checkbox-16: :fontawesome-brands-aws: An [AWS Batch Compute Environment created in that Workspace](https://docs.seqera.io/platform/23.4.0/compute-envs/aws-batch)
 
 :octicons-checkbox-16: The [nf-core/rnaseq](https://github.com/nf-core/rnaseq) pipeline repository
 
