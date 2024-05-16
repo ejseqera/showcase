@@ -1,52 +1,19 @@
 # Seqera Platform: Demonstration Walkthrough
 
-
-<div style="display: flex; align-items: center; margin-bottom: 20px;">
-  <div style="margin-right: 10px;">
-    <a href="https://cloud.seqera.io/login" class="md-button" style="display: block; margin-bottom: 10px;">
-      <i class="fas fa-user"></i> Login to Seqera Platform
-    </a>
-    <a href="https://seqera.io" class="md-button" style="display: block;">
-      Visit Seqera Main Site
-    </a>
-  </div>
-    <div style="flex: 1; margin-left: 200px;">
-    <img src="assets/seqera-one-platform.png" alt="Seqera Biotech Stack" style="width: 100%; max-width: 750px;">
-  </div>
-</div>
-
-
-
-
 ---
+
 ## Overview
 
-<!-- ![Seqera biotech stack](assets/seqera-biotech-stack.png){ .right .image} -->
-<img src="assets/seqera-biotech-stack.png" alt="Seqera biotech stack" style="float: right; width: 50%; margin-left: 30px; margin-bottom: 20px;">
+This guide provides a walkthrough of a standard Seqera Platform demonstration. The demonstration will describe how to add and run a pipeline in the Platform, examine the run details, as well as highlight key features such as pipeline optimization, Data Explorer and Data Studios.
 
-This guide provides a walkthrough of a standard Seqera Platform demonstration. The demonstration will describe how to add a pipeline to the Launchpad, launch a workflow with pipeline parameters, monitor a Run, and examine the run details in several different parts. The demonstration will also highlight key features such as the Pipeline Optimization, Data Explorer, and Compute Environment creation.
-
-More specifically, this demonstration will focus on using the [nf-core/rnaseq](https://github.com/nf-core/rnaseq) pipeline as an example and executing the workflow on AWS Batch.
-
-<div style="clear: both;"></div>
-
----
-
-## Requirements
-
-:octicons-checkbox-16: A [Seqera Platform Cloud](https://cloud.seqera.io/login) account
-
-:octicons-checkbox-16: Access to a Workspace in Seqera Platform
-
-:octicons-checkbox-16: :fontawesome-brands-aws: An [AWS Batch Compute Environment created in that Workspace](https://docs.seqera.io/platform/23.4.0/compute-envs/aws-batch)
-
-:octicons-checkbox-16: The [nf-core/rnaseq](https://github.com/nf-core/rnaseq) pipeline repository
-
-:octicons-checkbox-16: Samplesheet to create a Dataset on the Platform used to run minimal test RNAseq data (see [samplesheet_test.csv](./samplesheet_test.csv) file in this repository)
+The demonstration will focus on using the [nf-core/rnaseq](https://github.com/nf-core/rnaseq) pipeline as an example to execute a Nextflow pipeline on Seqera Cloud via the AWS Batch cloud executor.
 
 ---
 
 ## Sections
+
+<!-- ![Seqera biotech stack](assets/seqera-biotech-stack.png){ .right .image} -->
+<img src="assets/seqera-biotech-stack.png" alt="Seqera biotech stack" style="float: right; width: 50%; margin-left: 30px; margin-bottom: 20px;">
 
 [:material-check-circle:]() [Why use Seqera Platform?](./intro.md) <br/>
 [:material-check-circle:]() [Overview of the Platform](./demo_overview.md) <br/>
@@ -62,4 +29,41 @@ More specifically, this demonstration will focus on using the [nf-core/rnaseq](h
 [:material-check-circle:]() [Optimize your Pipeline](./pipeline_optimization.md) <br/>
 [:material-check-circle:]() [Automation on Seqera Platform](./automation.md) <br/>
 [:material-check-circle:]() [Scaling Science on Seqera Platform](./summary.md) <br/>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+
+---
+
+## Requirements
+
+:octicons-checkbox-16: [Seqera Cloud](https://cloud.seqera.io/login) account
+
+:octicons-checkbox-16: Access to a Workspace in Seqera Cloud
+
+:octicons-checkbox-16: Access to an [AWS Batch Compute Environment](https://docs.seqera.io/platform/23.4.0/compute-envs/aws-batch) created in that Workspace
+
+:octicons-checkbox-16: Publicly available [nf-core/rnaseq](https://github.com/nf-core/rnaseq) pipeline repository
+
+:octicons-checkbox-16: [Input samplesheet](./samplesheet_test.csv) to run the nf-core/rnaseq pipeline on Seqera Cloud
+
+---
+
+<div style="clear: both;"></div>
+
+<div style="display: flex; align-items: center; margin-bottom: 20px;">
+  <div style="margin-right: 10px;">
+    <a href="https://cloud.seqera.io/login" class="md-button" style="display: block; margin-bottom: 10px;">
+      <i class="fas fa-user"></i> Login to Seqera Cloud
+    </a>
+    <a href="https://seqera.io" class="md-button" style="display: block;">
+      Visit Seqera Website
+    </a>
+  </div>
+</div>
+
+---
 
