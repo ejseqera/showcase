@@ -1,5 +1,5 @@
 # Seqera Platform 
-## One platform for the scientific data analysis life cycle
+## One platform for the scientific data analysis life cycle {#hidden-heading}
 
 Throughout this guide, you have experienced how the Seqera Platform streamlines the management, execution, monitoring, and analysis of Nextflow pipelines in the cloud. This centralized and intuitive interface offers numerous advantages:
 
