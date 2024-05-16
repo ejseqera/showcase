@@ -53,12 +53,13 @@ More specifically, this demonstration will focus on using the [nf-core/rnaseq](h
 [:material-check-circle:]() [Add a Pipeline to the Launchpad](./add_a_pipeline.md) <br/>
 [:material-check-circle:]() [Add a Dataset to Seqera Platform](./add_a_dataset.md) <br/>
 [:material-check-circle:]() [Launch a Pipeline](./launch_pipeline.md) <br/>
-[:material-check-circle:]() [Runs and Monitoring your workflow](./monitor_run.md) <br/>
-[:material-check-circle:]() [Examine the run and task details](./run_details.md) <br/>
+[:material-check-circle:]() [Monitoring your run](./monitor_run.md) <br/>
+[:material-check-circle:]() [Monitoring views](./monitoring_views.md) <br/>
+[:material-check-circle:]() [Examine run and task details](./run_details.md) <br/>
 [:material-check-circle:]() [Resume a Pipeline](./resume_pipeline.md) <br/>
 [:material-check-circle:]() [Data Explorer](./data_explorer.md) <br/>
 [:material-check-circle:]() [Data Studios](./data_studios.md) <br/>
 [:material-check-circle:]() [Optimize your Pipeline](./pipeline_optimization.md) <br/>
-[:material-check-circle:]() [Automation](./automation.md) <br/>
+[:material-check-circle:]() [Automation on Seqera Platform](./automation.md) <br/>
 [:material-check-circle:]() [Scaling Science on Seqera Platform](./summary.md) <br/>
 
