@@ -31,5 +31,5 @@ For example, a pipeline can be pre-populated to run with specific parameters on 
 
 You can run custom code either before or after the execution of the Nextflow script. These text fields allow you to enter shell commands.
 
-Pre-run scripts are executed in the nf-launch script prior to invoking Nextflow processes. Pre-run scripts are useful for executor setup (e.g., use a specific version of Nextflow) and troubleshooting.
+Pre-run scripts allow you to run optional Bash script(s) that executes before pipeline launch in the same environment where Nextflow runs. Pre-run scripts are useful for executor setup (e.g., use a specific version of Nextflow) and troubleshooting.
 ![Specify NF version in pre-run script](assets/sp-cloud-pre-run-options.gif)
