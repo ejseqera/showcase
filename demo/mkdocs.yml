@@ -49,9 +49,9 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Showcase Demonstration:
-      - Getting started: demo_overview.md
       - What is Nextflow?: intro_nextflow.md
       - What is the Seqera Platform?: intro_platform.md
+      - Getting started: demo_overview.md
       - Add a Pipeline to the Launchpad: add_a_pipeline.md
       - Add a Dataset to the Launchpad: add_a_dataset.md
       - Launch Pipeline: launch_pipeline.md
