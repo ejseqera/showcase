@@ -1,6 +1,6 @@
-### Introduction to Nextflow
+## Introduction to Nextflow
 
-[Nextflow](https://www.nextflow.io/) is a workflow system for creating scalable, portable, and reproducible workflows.
+[Nextflow](https://www.nextflow.io/) is a domain specific language (DSL) for enabling scalable, portable, and reproducible workflows.
 
 Nextflow is both a workflow language and an execution runtime that supports a wide range of execution platforms, including popular traditional grid scheduling systems such as Slurm and IBM LSF, and cloud services such as AWS Batch, Google Cloud Batch, Azure Batch and Kubernetes.
 
@@ -11,7 +11,7 @@ While Nextflow solves many of the technical challenges associated with building 
 
 ## Limitations
 
-Monitoring and launching via CLI, though direct, poses challenges, especially with complex or large-scale pipelines that are not as simple as just running Hello World:
+Monitoring and launching workflows via the Nextflow CLI, though direct, poses challenges, especially with complex or large-scale pipelines that are not as simple as running a Hello World pipeline:
 
 - **Scalability**: As the number of tasks increases, manually checking individual log files becomes impractical.
 
