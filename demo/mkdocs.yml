@@ -1,4 +1,4 @@
-site_name: Seqera Platform Showcase Demonstration Docs
+site_name: "Seqera Platform: Demonstration Walkthrough"
 
 theme:
   name: material
@@ -59,13 +59,13 @@ nav:
   - Showcase Demonstration:
       - What is Nextflow?: intro_nextflow.md
       - What is the Seqera Platform?: intro_platform.md
-      - Getting started: demo_overview.md
-      - Launchpad: launchpad.md
-      - Run Information: run_information.md
-      - Monitoring Runs: monitoring_runs.md
-      - Optimize a Pipeline: pipeline_optimization.md
+      - Accessing the Platform: getting_started.md
+      - Launching pipelines: launchpad.md
+      - Monitoring runs: monitoring_runs.md
+      - Accessing run information: run_information.md
+      - Optimizing pipelines: pipeline_optimization.md
       - Data Explorer: data_explorer.md
       - Data Studios: data_studios.md
-      - Automation on Seqera Platform: automation.md
-      - Scaling Science on Seqera Platform: summary.md
+      - Automation on the Seqera Platform: automation.md
+      - Scaling Science on the Seqera Platform: summary.md
       - Resources: resources.md
