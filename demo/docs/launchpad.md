@@ -1,70 +1,61 @@
-# Launchpad
-The Launchpad allows Users publish and access pipelines pre-configured with compute environments, credentials, to start running Nextflow workflows immediately. A pipeline consists of a pre-configured workflow repository, compute environment, and launch parameters.
+## Launchpad
 
-Users can create their own pipelines, share them with others on the Launchpad, or tap into the hundreds of production-proven pipelines from nf-core and other sources to become productive immediately.
+Each Workspace has a Launchpad that allows users to easily create and share Nextflow pipelines that can be executed on any infrastructure supported by the Platform e.g. all public clouds and most HPC schedulers. A Launchpad pipeline consists of a pre-configured workflow repository, compute environment, and launch parameters.
+
+Users can create their own pipelines, share them with others on the Launchpad, or tap into over a hundred community pipelines available on nf-core and other sources.
 
 !!! Advanced
 
-    Adding a new pipeline is also simple. Users name their pipeline, select a compute environment, and point to the Git repository that houses the pipeline code. 
-    
-    After supplying a working directory for scratch data and setting up optional pipeline parameters, the pipeline is ready for use by anyone with access to the workspace. 
+    Adding a new pipeline is relatively simple and can be included as part of the demonstration. See the [Adding a pipeline](./add_a_pipeline.md) section.
 
-    See further instructions in [Add a pipeline](./add_a_pipeline.md).
+## Launch the nf-core/rnaseq pipeline
 
-# Launch the nf-core/rnaseq pipeline
+### 1. Go to Launchpad
 
-## 1. Go to Launchpad
-
-Navigate to the Launchpad to begin executing the nf-core/rnaseq pipeline.
-
-Select 'Launch' next to the pipeline of your choice to open the pipeline launch form.
+Navigate to the Launchpad in the `seqeralabs/showcase` Workspace and select `Launch` next to the `nf-core-rnaseq` pipeline to open the launch form.
 
 ![Launching a Pipeline](assets/sp-cloud-launch-form.gif)
 
-### Nextflow Schema
+### 2. Nextflow parameter schema
 
-Seqera Cloud looks for a [nextflow_schema.json](https://github.com/nf-core/rnaseq/blob/master/nextflow_schema.json) file in the root of the pipeline repository, to create a pipeline parameters form.
+On clicking the launch button, a parameters page will become visible to allow you to fine-tune the pipeline execution. This parameters form is rendered from a file called [`nextflow_schema.json`](https://github.com/nf-core/rnaseq/blob/master/nextflow_schema.json) which can be found in the root of the pipeline Git repository. By adding a simple JSON-based schema describing pipeline parameters, the `nextflow_schema.json` allows pipeline developers to easily adapt their in-house Nextflow pipelines to be executed via the interactive web interface available on the Seqera Platform.
 
-Pipeline developers can easily adapt in-house pipelines to Seqera's interactive web interface by adding a simple JSON-based schema describing workflow parameters.
+Please refer to the ["Best Practices for Deploying Pipelines with the Seqera Platform"](https://seqera.io/blog/best-practices-for-deploying-pipelines-with-seqera-platform/) blog for further information on how to automatically build the parameter schema for any Nextflow pipeline using tooling maintained by the nf-core community. 
 
-Schemas can be built using an automated schema build tool maintained by the nf-core community. See more info in [this blog post](https://seqera.io/blog/best-practices-for-deploying-pipelines-with-seqera-platform/) on getting Nextflow pipelines ready for Seqera Platform.
+### 3. Parameter selection
 
-## 2. Overview of the Launch form
+The following Platform-specific options can be adjusted if required:
 
-Pipelines typically contain at least these three parameters:
+- `Workflow run name`:
 
-**1. Workflow run name:** A unique identifier for the run, pre-filled with a random name. This can be customized.
+    A unique identifier for the run, pre-filled with a random name. This can be customized.
 
-**2. Labels:** Assign new or existing labels to the run.
+- `Labels`:
 
-**3. Input/output options:** Specify paths to pipeline input datasets, output directories, and other pipeline-specific I/O options. 
+    Assign new or existing labels to the run. For example, Project ID or genome version.
 
-### 4. Specify an input
-Inputs can be specified through a path, a Dataset, or a location of a file in the Cloud using the Data Explorer.
+Each pipeline including nf-core/rnaseq will have it's own set of parameters that need to be provided in order to run it. The following parameters are mandatory:
 
-For the 'input' parameter, click on the text box and click on dataset titled 'rnaseq_samples'. This dataset provides a samplesheet as input to the pipeline, with information on sample names and locations to the raw reads.
+- `input`:
 
-!!! Advanced
-    Users can upload their own samplesheets and make them available as a Dataset by uploading a CSV/TSV file in the 'Datasets' tab. 
+    Most nf-core pipelines have standardized the usage of the `input` parameter to specify an input samplesheet that contains paths to any input files (e.g. FastQ files) as well as any additional metadata required to run the pipeline. The `input` parameter can take a path to a samplesheet in the S3 bucket selected through Data Explorer. Alternatively, the Seqera Platform has a Datasets feature that allows you to upload structured data like samplesheets for use with Nextflow pipelines.
 
-    For more information on how to create a Dataset, see the [Add a Dataset](./add_a_dataset.md) section.
+    For the purposes of this demonstration, click on the "Browse" button next to the `input` parameter, and search and select a pre-loaded Dataset called "rnaseq_samples".
 
-<!-- # TODO update this gif  -->
-![Input parameters](assets/sp-cloud-launch-parameters-input.gif)
+    <!-- # TODO update this gif  -->
+    ![Input parameters](assets/sp-cloud-launch-parameters-input.gif)
 
-### 5. Specify an output directory
-Many nf-core pipelines use the `outdir` parameter convention for specifying where the results should be saved. 
+    !!! Advanced
+        Users can upload their own samplesheets and make them available as a Dataset by uploading them in the 'Datasets' tab. For more information please refer to the [Add a Dataset](./add_a_dataset.md) section.
 
-For the 'outdir' parameter, specify an S3 directory path manually, or select Browse to specify a cloud storage directory using Data Explorer.
+- `outdir`:
 
-![Output parameters](assets/sp-cloud-launch-parameters-outdir.gif)
+    Most nf-core pipelines have standardized the usage of the `outdir` parameter to specify where the final results created by the pipeline are published. `outdir` must be different for each different pipeline run, otherwise, your results will be overwritten. Since we want to publish these files to S3, we must provide the path to the appropriate storage location.
 
+    For the `outdir` parameter, specify an S3 directory path manually, or select Browse to specify a cloud storage directory using Data Explorer.
 
-### 6. Change trimming options
-Users can easily modify and specify parameters for analysis through the parameters form.
+    ![Output parameters](assets/sp-cloud-launch-parameters-outdir.gif)
 
-For example, in the 'Read trimming options' section of the parameters, change the 'trimmer' to select 'fastp' in the dropdown menu, instead of 'trimgalore'.
+Users can easily modify and specify other parameters to customize the pipeline execution through the parameters form. For example, in the 'Read trimming options' section of the parameters page, change the `trimmer` to select `fastp` in the dropdown menu, instead of `trimgalore`, and click the "Launch" button!
 
 ![Read trimming options](./assets/trimmer-settings.png)
-
-The remaining fields of the pipeline parameters form will vary for each pipeline, dependent on the parameters specified in the pipeline schema. When you have filled the necessary launch form details, select 'Launch'.
