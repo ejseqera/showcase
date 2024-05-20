@@ -1,6 +1,8 @@
 # Data Explorer
 
-With Data Explorer, you can browse and interact with remote data repositories from organization workspaces in Seqera Platform. It supports AWS S3, Azure Blob Storage, and Google Cloud Storage repositories.
+When running pipelines in the Cloud, users typically need access to buckets and blob storage to view pipeline results and upload files (e.g., samplesheets, reference data) for analysis. Managing credentials and permissions for multiple users, as well as training users to navigate Cloud consoles and CLIs, can be complicated. Instead, users can view their data directly through Data Explorer.
+
+With Data Explorer, you can browse and interact with remote data repositories from organization workspaces in the Seqera Platform. It supports AWS S3, Azure Blob Storage, and Google Cloud Storage repositories.
 
 ## View pipeline outputs in Data Explorer
 
@@ -33,8 +35,10 @@ Data Explorer also enables you to add public cloud storage buckets to view and u
 - [MSSNG Database](https://cloud.google.com/life-sciences/docs/resources/public-datasets/mssng)
 - [Genome Aggregation Database (gnomAD)](https://cloud.google.com/life-sciences/docs/resources/public-datasets/gnomad) 
 
+## 1. Add a cloud bucket
 Select 'Add cloud bucket' from the Data Explorer tab to add individual buckets (or directory paths within buckets). 
 
+## 2. Fill in bucket details
 Specify the Provider, Bucket path, Name, Credentials, and Description, then select Add. For public cloud buckets, select Public from the Credentials drop-down menu.
 
 ![Add public bucket](assets/data-explorer-add-bucket.gif)
