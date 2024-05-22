@@ -2,9 +2,9 @@
 
 Most bioinformatics pipelines will require an input of some sort, typically a samplesheet where each row consists of a sample, the location of files for that sample (such as fastq files), and other sample details.
 
-Datasets in Seqera Platform are CSV (comma-separated values) and TSV (tab-separated values) files stored in a workspace. They are used as inputs to pipelines to simplify data management, minimize user data-input errors, and facilitate reproducible workflows.
+On the Cloud, users might have to upload this samplesheet to a bucket to be used as input to a pipeline, or they will have to retrieve the path to this file on a shared filesystem.
 
-When running pipelines on the Cloud, this samplesheet has to be made available in Cloud storage or a remote location. Instead of doing this, we can upload a samplesheet we have locally, as a Dataset to the Platform to specify as input to our pipeline.
+Instead, these samplesheets can be made easily accessible through the 'Datasets' feature on the Platform. Datasets in Seqera Platform allow users to upload a structued CSV or TSV file to a Workspace. They are then used as inputs to pipelines to simplify data management, minimize user data-input errors, and facilitate reproducible workflows.
 
 ## 1. Download the nf-core/rnaseq test samplesheet
 
@@ -35,3 +35,8 @@ Go to the 'Datasets' tab and click 'Add Dataset'.
 ![Adding a Dataset](assets/sp-cloud-add-a-dataset.gif)
 
 Specify a name for the dataset such as 'nf-core-rnaseq-test-dataset', description, include the first row as header, and upload the CSV file provided in this repository. This CSV file specifies the paths to 7 small FASTQ files for a sub-sampled Yeast RNAseq dataset.
+
+Notice the location of the files point to a path on S3. This could also be a path to a shared filesystem if using HPC. By providing the path to the files, Nextflow will stage the files into the task working directory. 
+
+!!! Note
+    Seqera Platform will not store any data used for analysis in pipelines. The Datasets should include locations of data that is stored elsewhere, on the user's infrastructure.

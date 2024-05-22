@@ -17,13 +17,21 @@ theme:
     - content.code.copy
     - content.action.edit
     - content.action.view
-    
+
   font:
     text: Sans Serif
 
   palette:
     primary: dark purple
     accent: dark purple
+  
+  icon:
+    admonition:
+      note: octicons/tag-16
+      info: octicons/info-16
+      advanced: octicons/squirrel-16
+
+
 
 repo_url: https://github.com/ejseqera/showcase #TODO
 copyright: Copyright &copy; 2024 Seqera
@@ -38,6 +46,7 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+  - md_in_html
   - pymdownx.tabbed:
       alternate_style: true
   - attr_list
@@ -48,18 +57,15 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Showcase Demonstration:
-      - Why use Seqera Platform?: intro.md
+      - What is Nextflow?: intro_nextflow.md
+      - What is the Seqera Platform?: intro_platform.md
       - Getting started: demo_overview.md
-      - Add a Pipeline to the Launchpad: add_a_pipeline.md
-      - Add a Dataset to the Launchpad: add_a_dataset.md
-      - Launch Pipeline: launch_pipeline.md
-      - Monitor a Run: monitor_run.md
-      - Monitoring views: monitoring_views.md
-      - View Run Details: run_details.md
-      - Resume a Pipeline: resume_pipeline.md
+      - Launchpad: launchpad.md
+      - Run Information: run_information.md
+      - Monitoring Runs: monitoring_runs.md
+      - Optimize a Pipeline: pipeline_optimization.md
       - Data Explorer: data_explorer.md
       - Data Studios: data_studios.md
-      - Optimize your Pipeline: pipeline_optimization.md
       - Automation on Seqera Platform: automation.md
       - Scaling Science on Seqera Platform: summary.md
       - Resources: resources.md
