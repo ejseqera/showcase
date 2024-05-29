@@ -58,4 +58,4 @@ To stop a running session, click on the three dots next to the status and select
 <br>
 
 !!! Advanced
-    For a more detailed use-case of performing tertiary analysis with the results of the nf-core/rnaseq pipeline in a Jupyter notebook, take a look at the [Analyse RNAseq data using Jupyter Notebooks](./jupyter_data_studio.md) section.
+    For a more detailed use-case of performing tertiary analysis with the results of the nf-core/rnaseq pipeline in a Jupyter notebook, take a look at the [Analyse RNAseq data using Jupyter Notebooks](./013_data_studio_jupyter_example.md) section.

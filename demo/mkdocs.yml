@@ -1,4 +1,4 @@
-site_name: Seqera Platform Showcase Demonstration Docs
+site_name: "Seqera Platform: Demonstration Walkthrough"
 
 theme:
   name: material
@@ -31,8 +31,6 @@ theme:
       info: octicons/info-16
       advanced: octicons/squirrel-16
 
-
-
 repo_url: https://github.com/ejseqera/showcase #TODO
 copyright: Copyright &copy; 2024 Seqera
 
@@ -55,17 +53,17 @@ markdown_extensions:
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 nav:
-  - Home: index.md
+  - Home: 001_home_page.md
   - Showcase Demonstration:
-      - What is Nextflow?: intro_nextflow.md
-      - What is the Seqera Platform?: intro_platform.md
-      - Getting started: demo_overview.md
-      - Launchpad: launchpad.md
-      - Run Information: run_information.md
-      - Monitoring Runs: monitoring_runs.md
-      - Optimize a Pipeline: pipeline_optimization.md
-      - Data Explorer: data_explorer.md
-      - Data Studios: data_studios.md
-      - Automation on Seqera Platform: automation.md
-      - Scaling Science on Seqera Platform: summary.md
-      - Resources: resources.md
+      - What is Nextflow?: 002_what_is_nextflow.md
+      - What is the Seqera Platform?: 003_what_is_the_seqera_platform.md
+      - Accessing the Platform: 004_accessing_the_platform.md
+      - Launching pipelines: 005_launching_pipelines.md
+      - Monitoring runs: 008_monitoring_runs.md
+      - Viewing run information: 009_viewing_run_information.md
+      - Optimizing pipelines: 010_optimizing_pipelines.md
+      - Using Data Explorer: 011_using_data_explorer.md
+      - Introduction to Data Studios: 012_introduction_to_data_studios.md
+      - Automation on the Seqera Platform: 014_automation_on_the_seqera_platform.md
+      - Walthrough summary: 015_walkthrough_summary.md
+      - Resources: 016_resources.md
