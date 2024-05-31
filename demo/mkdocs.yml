@@ -24,7 +24,7 @@ theme:
   palette:
     primary: dark purple
     accent: dark purple
-  
+
   icon:
     admonition:
       note: octicons/tag-16
@@ -53,8 +53,8 @@ markdown_extensions:
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 nav:
-  - Home: 001_home_page.md
   - Showcase Demonstration:
+      - Getting Started: 001_home_page.md
       - What is Nextflow?: 002_what_is_nextflow.md
       - What is the Seqera Platform?: 003_what_is_the_seqera_platform.md
       - Accessing the Platform: 004_accessing_the_platform.md
