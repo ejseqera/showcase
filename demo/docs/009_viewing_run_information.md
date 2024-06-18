@@ -11,11 +11,16 @@ The Runs tab contains all previous job executions. Each new or resumed job is gi
 - **cancelled**: Stopped forceably during execution
 - **unknown**: Indeterminate status
 
+
+/// details | Click to show animation
+    type: example
+
 ![Viewing Runs](assets/sp-cloud-view-all-runs.gif)
+///
 
 ## 1. View the run details for nf-core/rnaseq
 
-The pipeline launched in the [previous step](./launchpad.md) will take some time to begin running. In the meantime, we can take a look at a previous successful run to observe the run details.
+The pipeline launched in the [previous step](./005_launching_pipelines.md) will take some time to begin running. In the meantime, we can take a look at a previous successful run to observe the run details.
 
 Click on a previous run to go to the Run Details.
 
@@ -35,8 +40,12 @@ As the pipeline begins to run, you will see the Runs page become populated with 
 
 - **Reports**: View outputs of your pipeline directly in the Platform.
 
-![View the rnaseq run](assets/sp-cloud-run-info.gif)
 
+/// details | Click to show animation
+    type: example
+
+![View the rnaseq run](assets/sp-cloud-run-info.gif)
+///
 
 ## 3. View Reports
 
@@ -68,7 +77,12 @@ reports:
 
 On the Runs page will be General information about who executed the run, when, the Git hash used and tag, as well as additional details about the compute environment used, and the version of Nextflow.
 
+
+/// details | Click to show animation
+    type: example
+
 ![General run information](assets/general-run-details.gif)
+///
 
 The 'General' panel displays top-level information about a pipeline run:
 
@@ -115,7 +129,12 @@ The About tab provides the following information:
 
 8. **Resources used**: Metrics for the resources used by the task
 
+
+/// details | Click to show animation
+    type: example
+
 ![Task details window](assets/task-details.gif)
+///
 
 **Execution log**
 
@@ -131,13 +150,23 @@ The Data Explorer tab allows you to view the log files and output files generate
 
 You can view, download, and retrieve the link for these intermediate files stored in the Cloud from the Explorer tab - making troubleshooting much simpler.
 
+
+/// details | Click to show animation
+    type: example
+
 ![Task data explorer](assets/sp-cloud-task-data-explorer.gif)
+///
 
 ## 8. Resume a Pipeline
 
 Seqera Platform enables you to use Nextflow's resume functionality to resume a workflow run with the same parameters, using the cached results of previously completed tasks and only executing failed and pending tasks.
 
+
+/// details | Click to show animation
+    type: example
+
 ![Resuming a run](assets/sp-cloud-resume-a-run.gif)
+///
 
 To resume a failed or cancelled run:
 
@@ -146,7 +175,12 @@ To resume a failed or cancelled run:
 - Edit the parameters before launch, if desired
 - If you have the appropriate permissions, you may edit the compute environment if desired
 
-!!! Advanced 
-  Resume functionality relies on the work directory for an execution. 
+
+
+/// details | Advanced
+    type: info    
+
+Resume functionality relies on the work directory for an execution. 
   
-  For more details on how to modify launch settings for a run (i.e. changing compute environment, work directory) and be able to use results from cached tasks, see [Resuming a Run](./resume_pipeline.md).
+For more details on how to modify launch settings for a run (i.e. changing compute environment, work directory) and be able to use results from cached tasks, see [Resuming a Run](./resume_pipeline.md).
+///

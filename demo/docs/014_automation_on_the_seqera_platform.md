@@ -10,14 +10,22 @@ The API can be accessed from `https://api.cloud.seqera.io`.
 
 The full list of endpoints is available in Seqera's OpenAPI schema found [here](https://cloud.seqera.io/openapi/index.html). The API requires an authentication token to be specified in every API request. This can be created in your user menu under **Your tokens**.
 
+
+/// details | Click to show animation
+    type: example
+
 ![Platform access token](./assets/generate-access-token.gif)
+///
 
 The token is only displayed once. Store your token in a secure place. Use this token to authenticate requests to the API.
 
-!!! Advanced 
-    For an example of how to use the API to launch a pipeline, we can make the following request using cURL: 
 
-    ```bash
+/// details | Advanced
+        type: info    
+
+For an example of how to use the API to launch a pipeline, we can make the following request using cURL: 
+
+    
     curl -X POST "https://api.cloud.seqera.io/workflow/launch?workspaceId=38659136604200" \
         -H "Accept: application/json" \
         -H "Authorization: Bearer <your_access_token>" \
@@ -32,7 +40,9 @@ The token is only displayed once. Store your token in a secure place. Use this t
             "revision": "master"
         }
     }'
-    ```
+    
+///
+
 
 ### 2. Seqera Platform CLI
 
@@ -44,12 +54,14 @@ The CLI provides an interface to launch pipelines, manage compute environments, 
 
 The `tw` CLI installation and usage details can be obtained from [this](https://github.com/seqeralabs/tower-cli/) Github repository.
 
-!!! Advanced
-    For example, to launch the hello pipeline using the CLI:
 
-    ```bash
+/// details | Advanced
+    type: info    
+
+For example, to launch the hello pipeline using the CLI:
+
     tw launch hello --workspace seqeralabs/showcase
-    ```
+///
 
 ### 3. seqerakit
 
@@ -64,20 +76,22 @@ The key features are:
 The `seqerakit` installation and usage details are available on [this](https://github.com/seqeralabs/seqera-kit/) Github repository.
 
 
-!!! Advanced
-    For example, to launch the hello pipeline using seqerakit, you can create a YAML file called `hello.yaml` as follows:
+/// details | Advanced
+    type: info    
 
-    ```yaml
+For example, to launch the hello pipeline using seqerakit, you can create a YAML file called `hello.yaml` as follows:
+
     launch:
     - name: "hello-world"
         url: "https://github.com/nextflow-io/hello"
         workspace: "seqeralabs/showcase"
-    ```
-    Then run seqerakit with:
 
-    ```console
+Then run seqerakit with:
+
     $ seqerakit hello.yaml
-    ```
+
+///
+
 ## Resources
 A common use-case for using the automation methods above is to automatically execute a pipeline as data arrives off a sequencer or integrating Seqera Platform into a broader customer facing application. For a step-by-step guide on setting up this kind of **Workflow Automation on Seqera Platform**, take a look at [this blog post](https://seqera.io/blog/workflow-automation/).
 

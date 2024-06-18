@@ -20,7 +20,11 @@ Once optimization is selected, any subsequent runs of that pipeline on the Launc
 > **NOTE:** Optimizated profiles are generated off of one run at a time, defaulting to the most recent runs, and _not_ an aggregation of previous runs.
 
 
+/// details | Click to show animation
+    type: example
+
 ![Optimized configuration](assets/optimize-configuration.gif)
+///
 
 You can verify the optimized configuration of a given run by inspecting the resource usage plots for that run and these fields in the run's task table:
 

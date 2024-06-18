@@ -12,7 +12,12 @@ The Seqera Platform manages all the details, enabling users to easily select the
 
 To create a Data Studio, click on the 'Add data studio' button and select from any one of the three currently available templates.
 
+
+/// details | Click to show animation
+    type: example
+
 ![Add a data studio](assets/create-data-studio.gif)
+///
 
 #### 2. Select a compute environment {#hidden-heading}
 
@@ -22,9 +27,14 @@ Currently, only AWS Batch is supported.
 
 Select data to mount into your data studios environment using the Fusion file system in Data Explorer. This data will be available at `/workspace/data/<dataset>`.
 
-For example, to take a look at the results of your nf-core/rnaseq pipeline run, you can mount the value of the `outdir` parameter specified in the [earlier step when launching the pipeline](./launchpad.md).
+For example, to take a look at the results of your nf-core/rnaseq pipeline run, you can mount the value of the `outdir` parameter specified in the [earlier step when launching the pipeline](./005_launching_pipelines.md).
+
+
+/// details | Click to show animation
+    type: example
 
 ![Mount data into studio](assets/mount-data-into-studio.gif)
+///
 
 #### 4. Resources for environment {#hidden-heading}
 
@@ -34,7 +44,13 @@ Then, click Add!
 
 The data studio environment will be available in the Data Studios landing page with the status 'stopped'. Click on the three dots and **Start** to begin running the studio.
 
+
+/// details | Click to show animation
+    type: example
+
 ![Start a studio](assets/start-studio.gif)
+///
+
 
 ![Connect to a studio](assets/connect-to-studio.png){ .right .image}
 
@@ -57,5 +73,10 @@ To stop a running session, click on the three dots next to the status and select
 
 <br>
 
-!!! Advanced
-    For a more detailed use-case of performing tertiary analysis with the results of the nf-core/rnaseq pipeline in a Jupyter notebook, take a look at the [Analyse RNAseq data using Jupyter Notebooks](./013_data_studio_jupyter_example.md) section.
+
+
+/// details | Advanced
+    type: info    
+
+For a more detailed use-case of performing tertiary analysis with the results of the nf-core/rnaseq pipeline in a Jupyter notebook, take a look at the [Analyse RNAseq data using Jupyter Notebooks](./013_data_studio_jupyter_example.md) section.
+///

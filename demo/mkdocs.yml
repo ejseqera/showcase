@@ -9,6 +9,7 @@ theme:
     - navigation.tabs
     - navigation.path
     - navigation.top
+    - navigation.instant
     - search.highlight
     - search.share
     - search.suggest
@@ -41,7 +42,6 @@ extra_javascript:
   - https://buttons.github.io/buttons.js
 
 markdown_extensions:
-  - admonition
   - pymdownx.details
   - pymdownx.superfences
   - md_in_html
@@ -51,10 +51,57 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.blocks.admonition:
+      types:
+        - new
+        - settings
+        - note
+        - abstract
+        - info
+        - tip
+        - success
+        - question
+        - warning
+        - failure
+        - danger
+        - bug
+        - example
+        - quote
+  - pymdownx.blocks.details:
+      types:
+        - name: details-new
+          class: new
+        - name: details-settings
+          class: settings
+        - name: details-note
+          class: note
+        - name: details-abstract
+          class: abstract
+        - name: details-info
+          class: info
+        - name: details-tip
+          class: tip
+        - name: details-success
+          class: success
+        - name: details-question
+          class: question
+        - name: details-warning
+          class: warning
+        - name: details-failure
+          class: failure
+        - name: details-danger
+          class: danger
+        - name: details-bug
+          class: bug
+        - name: details-example
+          class: example
+        - name: details-quote
+          class: quote
+  - pymdownx.blocks.html:
 
 nav:
   - Showcase Demonstration:
-      - Getting Started: 001_home_page.md
+      - Getting Started: index.md
       - What is Nextflow?: 002_what_is_nextflow.md
       - What is the Seqera Platform?: 003_what_is_the_seqera_platform.md
       - Accessing the Platform: 004_accessing_the_platform.md
@@ -65,5 +112,7 @@ nav:
       - Using Data Explorer: 011_using_data_explorer.md
       - Introduction to Data Studios: 012_introduction_to_data_studios.md
       - Automation on the Seqera Platform: 014_automation_on_the_seqera_platform.md
-      - Walthrough summary: 015_walkthrough_summary.md
+      - Seqera Pipelines: 017_seqera_pipelines.md
+      - Seqera Containers: 018_seqera_containers.md
+      - Walkthrough summary: 015_walkthrough_summary.md
       - Resources: 016_resources.md

@@ -16,11 +16,7 @@
 
 .md-footer {
   margin-top: 40px;
-  background-color: #009485;
-}
-
-.md-footer__inner {
-  display: none !important;
+  background-color: #3f52b5;
 }
 
 @media (max-width: 600px) {
