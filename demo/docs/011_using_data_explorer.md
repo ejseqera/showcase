@@ -11,19 +11,34 @@ In Data Explorer, you are able to:
   - **View bucket details**:
     The cloud provider, bucket address, and credentials, by selecting the information icon next to a bucket in the Data Explorer list.
 
-![Bucket details](assets/data-explorer-view-details.gif)
+
+    /// details | Click to show animation
+        type: example
+
+    ![Bucket details](assets/data-explorer-view-details.gif)
+    ///
 
   - **View bucket contents**
     Select a bucket name from the Data Explorer list to view the contents of that bucket. 
     
     The file type, size, and path of objects are displayed in columns to the right of the object name. For example, we can take a look at the outputs of our nf-core/rnaseq run.
 
-   ![Data Explorer bucket](assets/sp-cloud-data-explorer.gif)
+    /// details | Click to show animation
+        type: example
+    
+    ![Data Explorer bucket](assets/sp-cloud-data-explorer.gif)
+    ///
 
    - **Preview files**: 
     Select a file to open a preview window that includes a Download button. For example, we can use Data Explorer to view the results of the nf-core/rnaseq pipeline that we executed. Specifically, we can take a look at the resultant gene counts of the salmon quantification step:
 
-![Preview pipeline results](assets/data-explorer-preview-files.gif)
+
+
+    /// details | Click to show animation
+        type: example
+
+    ![Preview pipeline results](assets/data-explorer-preview-files.gif)
+    ///
 
 ## Configure a bucket to browser in Data Explorer
 Data Explorer also enables you to add public cloud storage buckets to view and use data from resources such as:
@@ -41,6 +56,11 @@ Select 'Add cloud bucket' from the Data Explorer tab to add individual buckets (
 ## 2. Fill in bucket details
 Specify the Provider, Bucket path, Name, Credentials, and Description, then select Add. For public cloud buckets, select Public from the Credentials drop-down menu.
 
-![Add public bucket](assets/data-explorer-add-bucket.gif)
+
+  /// details | Click to show animation
+      type: example
+
+  ![Add public bucket](assets/data-explorer-add-bucket.gif)
+  ///
 
 You are now able to use this data in your analysis without having to interact with Cloud consoles or CLI tools. 

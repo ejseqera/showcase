@@ -2,7 +2,12 @@
 
 Login to [Seqera Cloud](https://cloud.seqera.io/login), either through a GitHub or Google account, or by providing an email address. If you are signing in for the first time, Seqera Cloud will send an authentication link to the email address, enabling you to login.
 
+/// details | Click to show animation
+    type: example
+
 ![Seqera Platform Cloud login](assets/sp-cloud-signin.gif)
+///
+
 
 ## Organizations and Workspaces
 
@@ -17,7 +22,13 @@ With Workspaces, you can:
 
 Navigate to the `seqeralabs/showcase` Workspace which contains all of the relevant entities required for this walkthrough guide.
 
+
+/// details | Click to show animation
+    type: example
+
 ![Seqera Labs Showcase Workspace](assets/go-to-workspace.gif)
+///
+
 
 
 

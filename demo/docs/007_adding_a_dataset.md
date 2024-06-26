@@ -38,5 +38,10 @@ Specify a name for the dataset such as 'nf-core-rnaseq-test-dataset', descriptio
 
 Notice the location of the files point to a path on S3. This could also be a path to a shared filesystem if using HPC. By providing the path to the files, Nextflow will stage the files into the task working directory. 
 
-!!! Note
-    Seqera Platform will not store any data used for analysis in pipelines. The Datasets should include locations of data that is stored elsewhere, on the user's infrastructure.
+
+
+/// details | Note
+        type: note   
+
+Seqera Platform will not store any data used for analysis in pipelines. The Datasets should include locations of data that is stored elsewhere, on the user's infrastructure.
+///

@@ -4,9 +4,12 @@ Each Workspace has a Launchpad that allows users to easily create and share Next
 
 Users can create their own pipelines, share them with others on the Launchpad, or tap into over a hundred community pipelines available on nf-core and other sources.
 
-!!! Advanced
 
+/// details | Advanced
+        type: info   
+    
     Adding a new pipeline is relatively simple and can be included as part of the demonstration. See the [Adding a pipeline](./006_adding_a_pipeline.md) section.
+///
 
 ## Launch the nf-core/rnaseq pipeline
 
@@ -14,7 +17,13 @@ Users can create their own pipelines, share them with others on the Launchpad, o
 
 Navigate to the Launchpad in the `seqeralabs/showcase` Workspace and select `Launch` next to the `nf-core-rnaseq` pipeline to open the launch form.
 
-![Launching a Pipeline](assets/sp-cloud-launch-form.gif)
+
+/// details | Click to show animation
+    type: example
+
+ ![Launching a Pipeline](assets/sp-cloud-launch-form.gif)
+///
+
 
 ### 2. Nextflow parameter schema
 
@@ -42,11 +51,18 @@ Each pipeline including nf-core/rnaseq will have it's own set of parameters that
 
     For the purposes of this demonstration, click on the "Browse" button next to the `input` parameter, and search and select a pre-loaded Dataset called "rnaseq_samples".
 
-    <!-- # TODO update this gif  -->
-    ![Input parameters](assets/sp-cloud-launch-parameters-input.gif)
+    /// details | Click to show animation
+        type: example
 
-    !!! Advanced
-        Users can upload their own samplesheets and make them available as a Dataset by uploading them in the 'Datasets' tab. For more information please refer to the [Add a Dataset](./007_adding_a_dataset.md) section.
+    ![Input parameters](assets/sp-cloud-launch-parameters-input.gif)
+    ///
+    
+
+    /// details | Advanced
+        type: info    
+        
+    Users can upload their own samplesheets and make them available as a Dataset by uploading them in the 'Datasets' tab. For more information please refer to the [Add a Dataset](./007_adding_a_dataset.md) section.
+    ///
 
 - `outdir`:
 
@@ -54,7 +70,12 @@ Each pipeline including nf-core/rnaseq will have it's own set of parameters that
 
     For the `outdir` parameter, specify an S3 directory path manually, or select Browse to specify a cloud storage directory using Data Explorer.
 
+
+    /// details | Click to show animation
+        type: example
+    
     ![Output parameters](assets/sp-cloud-launch-parameters-outdir.gif)
+    ///
 
 Users can easily modify and specify other parameters to customize the pipeline execution through the parameters form. For example, in the 'Read trimming options' section of the parameters page, change the `trimmer` to select `fastp` in the dropdown menu, instead of `trimgalore`, and click the "Launch" button!
 

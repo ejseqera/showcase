@@ -6,7 +6,7 @@ Nextflow is both a workflow language and an execution runtime that supports a wi
 
 While Nextflow solves many of the technical challenges associated with building and executing data pipelines, bioinformaticians, data scientists, and clinicians still face challenges.
 
-- Users shouldn't need extensive technical knowledge of the command line, and understanding of how to configure computing environments to monitor pipeline execution. 
+- Users shouldn't need extensive technical knowledge of the command line, and understanding of how to configure computing environments to monitor pipeline execution.
 - Researchers also face difficulties in ensuring reproducibility, tracking data provenance, and sharing comprehensive reports and interactive tools for data analysis.
 
 ## Limitations
@@ -20,5 +20,3 @@ Monitoring and launching workflows via the Nextflow CLI, though direct, poses ch
 - **Aggregation**: Collecting and interpreting logs from various processes requires additional tools or scripts, complicating the workflow management.
 
 - **Flexibility**: Switching between environments (i.e., your local computer to HPC, or cloud) requires the setup of access in the form of account keys and credentials to the environment on your CLI, followed by using the appropriate Nextflow configuration settings.
-
-
