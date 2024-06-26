@@ -110,7 +110,8 @@ nav:
       - Viewing run information: 009_viewing_run_information.md
       - Optimizing pipelines: 010_optimizing_pipelines.md
       - Using Data Explorer: 011_using_data_explorer.md
-      - Introduction to Data Studios: 012_introduction_to_data_studios.md
+      - Tertiary Analysis in Data Studios: 012_tertiary_analysis_data_studios.md
+      - Setting up a Data Studio: 013_setting_up_data_studio.md
       - Automation on the Seqera Platform: 014_automation_on_the_seqera_platform.md
       - Seqera Pipelines: 017_seqera_pipelines.md
       - Seqera Containers: 018_seqera_containers.md
