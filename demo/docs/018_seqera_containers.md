@@ -11,13 +11,13 @@ Seqera Containers enhance the Wave experience by allowing users to type in the n
 
 Users can:
 
-1. Request any combination of packages
+    1. Request any combination of packages
 
-/// details | Click to show animation
-    type: example
+    /// details | Click to show animation
+        type: example
 
-![Seqera Containers](assets/seqera-containers-create.gif)
-///
+    ![Seqera Containers](assets/seqera-containers-create.gif)
+    ///
 
 2. Select architecture and image format (i.e. linux/arm64 architecture)
 
