@@ -8,12 +8,39 @@ Projects like BioContainers offer pre-built images for Bioconda tools but have l
 
 Seqera Containers enhance the Wave experience by allowing users to type in the names of desired tools and instantly receive a container URI, usable for any purpose. The image is stored in a cache provided by AWS, ensuring reproducibility and availability for future runs without expiry.
 
+
 Users can:
 
-- Request any combination of packages
-- Select architecture and image format (i.e. linux/arm64 architecture)
-- Users can create Singularity images and download `.sif` files directly
+1. Request any combination of packages
 
-Clicking “View build details” for the container shows the full information of the Dockerfile, conda environment file, and build settings, as well as the complete build logs. Every container includes results from a security scan.
+/// details | Click to show animation
+    type: example
 
-### TODO gif
+![Seqera Containers](assets/seqera-containers-create.gif)
+///
+
+2. Select architecture and image format (i.e. linux/arm64 architecture)
+
+/// details | Click to show animation
+    type: example
+
+![Multi-arch Containers](assets/seqera-containers-arch-settings.gif)
+///
+
+3. Users can create Singularity images and download `.sif` files directly
+
+/// details | Click to show animation
+    type: example
+
+![Seqera Containers](assets/seqera-containers-create.gif)
+///
+
+You can view containers you previously build using the 'My Recent Containers' button. 
+
+You can view Clicking “View build details” for the container shows the full information of the Dockerfile, conda environment file, and build settings, as well as the complete build logs. Every container includes results from a security scan.
+
+/// details | Click to show animation
+    type: example
+
+![Seqera Containers Build Details](assets/seqera-containers-build-details.gif)
+///
