@@ -21,11 +21,9 @@ Clicking on the three dots will allow you to:
 
 ## Analyse RNAseq Data in Data Studios
 
-We can use Data Studios to further analyse our RNAseq results, perform comparisons, and perform statistical analyses such as differential expression. 
+We can use Data Studios to perform bespoke analysis on the results of upstream workflows. For example we can run the nf-core/rnaseq workflow to quantify gene expression, followed by nf-core/differentialabundance to derive differential expression statistics, and then use Data Studios to interrogate and visualise the results of those analyses. 
 
-To generate differential statistics and comparisons for analyses, we can run the [nf-core/differentialabundance](https://github.com/nf-core/differentialabundance) pipeline with out RNAseq results as input and visualise these data in a Data Studio.
-
-For the sake of time, we have run RNAseq results through the differentialabundance pipeline and created a new Data Studio with these results from the cloud mounted into the Studio to perform further analysis.
+As an example, we have run RNAseq results through the differentialabundance pipeline and created a new Data Studio with these results from the cloud mounted into the Studio to perform further analysis. One of these outputs is a Shiny application, which we can deploy for interactive analysis.
 
 
 /// details | Presenter's Note
@@ -50,7 +48,7 @@ We can also specify the resources this Studio will use.
 ///
 
 ### 2. Connect to the Studio
-This Data Studio will start an RStudio environment with the necessary R packages for deploying an RShiny app that will allow us to interacte with various comparisons and visualisations of our RNAseq data.
+This Data Studio will start an RStudio environment in which we have already installed the necessary R packages for deploying an RShiny app that will allow us to interact with various comparisons and visualisations of our RNAseq data. We've also generated an R Markdown document with the commands in place to generate the R Shiny application.
 
 
 /// details | Click to show animation
