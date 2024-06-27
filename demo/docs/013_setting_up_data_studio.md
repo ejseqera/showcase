@@ -79,7 +79,7 @@ To stop a running session, click on the three dots next to the status and select
 /// details | Advanced
     type: info    
 
-For a more detailed use-case of performing tertiary analysis with the results of the nf-core/rnaseq pipeline in an RStudio/RShiny app environment, take a look at the [Introduction to Data Studios](./012_introduction_to_data_studios.md) section.
+For a more detailed use-case of performing tertiary analysis with the results of the nf-core/rnaseq pipeline in an RStudio/RShiny app environment, take a look at the [Tertiary analysis with Data Studios](./012_tertiary_analysis_data_studios.md) section.
 ///
 
 ## Checkpoints in Data studios
@@ -92,4 +92,8 @@ When starting a data studio, a checkpoint gets created. This checkpoint allows y
 
 If you want more detailed explanation about specific concepts of Data Studios or find out which tools are preinstalled in Data Studio images, please visit [Seqera Platform Docs](https://docs.seqera.io/platform/23.4.0/data/data-studios)
 
-Additionally, to see an expanded demonstration of Studios based on Rob Newman's demo, please visit this hidden section #TODO. 
+/// details | Advanced
+    type: info    
+
+To see additional details on Data Studios based on a demonstration from Rob Newman, please visit [this hidden section](./019_data_studios_deep_dive.md).  
+///
