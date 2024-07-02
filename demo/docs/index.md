@@ -4,9 +4,6 @@
 
 ## Overview
 
-<!-- ![Seqera biotech stack](assets/seqera-biotech-stack.png){ .right .image} -->
-<!-- <img src="assets/seqera-biotech-stack.png" alt="Seqera biotech stack" style="float: right; width: 50%; margin-left: 30px; margin-bottom: 20px;"> -->
-
 This guide provides a walkthrough of a standard Seqera Platform demonstration. The demonstration will describe how to add and run a pipeline in the Platform, examine the run details, as well as highlight key features such as pipeline optimization, Data Explorer and Data Studios.
 
 The demonstration will focus on using the [nf-core/rnaseq](https://github.com/nf-core/rnaseq) pipeline as an example to execute a Nextflow pipeline on Seqera Cloud via the AWS Batch cloud executor.
@@ -16,6 +13,7 @@ The demonstration will focus on using the [nf-core/rnaseq](https://github.com/nf
 ---
 
 ## Requirements
+
 
 [:fontawesome-solid-computer: Login to Seqera Platform](https://cloud.seqera.io){ .md-button } [:octicons-browser-24: Seqera Main Site](https://seqera.io){ .md-button }
 
