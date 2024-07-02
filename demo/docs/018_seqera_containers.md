@@ -11,7 +11,7 @@ Seqera Containers enhance the Wave experience by allowing users to type in the n
 
 Users can:
 
-    1. Request any combination of packages
+1. Request any combination of packages
 
     /// details | Click to show animation
         type: example
@@ -21,23 +21,23 @@ Users can:
 
 2. Select architecture and image format (i.e. linux/arm64 architecture)
 
-/// details | Click to show animation
-    type: example
+    /// details | Click to show animation
+        type: example
 
-![Multi-arch Containers](assets/seqera-containers-arch-settings.gif)
-///
+    ![Multi-arch Containers](assets/seqera-containers-arch-settings.gif)
+    ///
 
 3. Users can create Singularity images and download `.sif` files directly
 
-/// details | Click to show animation
-    type: example
+    /// details | Click to show animation
+        type: example
 
-![Seqera Containers](assets/seqera-containers-create.gif)
-///
+    ![Seqera Containers](assets/seqera-containers-create.gif)
+    ///
 
 You can view containers you previously build using the 'My Recent Containers' button. 
 
-You can view Clicking “View build details” for the container shows the full information of the Dockerfile, conda environment file, and build settings, as well as the complete build logs. Every container includes results from a security scan.
+Clicking 'View build details' for the container shows the full information of the Dockerfile, conda environment file, and build settings, as well as the complete build logs. Every container includes results from a security scan.
 
 /// details | Click to show animation
     type: example

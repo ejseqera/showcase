@@ -37,7 +37,7 @@ rnaseq username:johndoe status:succeeded after:2024-01-01
 /// details | Click to show animation
     type: example
 
-    ![All Runs view](assets/all_runs_view.gif)
+![All Runs view](assets/all_runs_view.gif)
 ///
 
 ## 3. Dashboard view

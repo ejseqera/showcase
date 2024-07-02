@@ -8,14 +8,14 @@ Users can create their own pipelines, share them with others on the Launchpad, o
 /// details | Advanced
         type: info   
     
-    Adding a new pipeline is relatively simple and can be included as part of the demonstration. See the [Adding a pipeline](./006_adding_a_pipeline.md) section.
+Adding a new pipeline is relatively simple and can be included as part of the demonstration. See the [Adding a Pipeline](./006_adding_a_pipeline.md) section.
 ///
 
 ## Launch the nf-core/rnaseq pipeline
 
 ### 1. Go to Launchpad
 
-Navigate to the Launchpad in the `seqeralabs/showcase` Workspace and select `Launch` next to the `nf-core-rnaseq` pipeline to open the launch form.
+Navigate to the Launchpad in the `seqeralabs/showcase` Workspace and select **Launch** next to the `nf-core-rnaseq` pipeline to open the launch form.
 
 
 /// details | Click to show animation
