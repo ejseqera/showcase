@@ -20,7 +20,7 @@ The Runs tab contains all previous job executions. Each new or resumed job is gi
 
 ## 1. View the run details for nf-core/rnaseq
 
-The pipeline launched in the [previous step](./005_launching_pipelines.md) will take some time to begin running. In the meantime, we can take a look at a previous successful run to observe the run details.
+The pipeline launched in the [previous step](./004_launching_pipelines.md) will take some time to begin running. In the meantime, we can take a look at a previous successful run to observe the run details.
 
 Click on a previous run to go to the Run Details.
 

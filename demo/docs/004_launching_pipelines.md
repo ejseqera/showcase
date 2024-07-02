@@ -8,7 +8,7 @@ Users can create their own pipelines, share them with others on the Launchpad, o
 /// details | Advanced
         type: info   
     
-Adding a new pipeline is relatively simple and can be included as part of the demonstration. See the [Adding a Pipeline](./006_adding_a_pipeline.md) section.
+Adding a new pipeline is relatively simple and can be included as part of the demonstration. See the [Adding a Pipeline](./005_adding_a_pipeline.md) section.
 ///
 
 ## Launch the nf-core/rnaseq pipeline
@@ -61,7 +61,7 @@ Each pipeline including nf-core/rnaseq will have it's own set of parameters that
     /// details | Advanced
         type: info    
         
-    Users can upload their own samplesheets and make them available as a Dataset by uploading them in the 'Datasets' tab. For more information please refer to the [Add a Dataset](./007_adding_a_dataset.md) section.
+    Users can upload their own samplesheets and make them available as a Dataset by uploading them in the 'Datasets' tab. For more information please refer to the [Add a Dataset](./006_adding_a_dataset.md) section.
     ///
 
 - `outdir`:
