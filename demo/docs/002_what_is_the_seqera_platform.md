@@ -8,19 +8,19 @@ The Platform acts as a pane of glass, enabling users to effortlessly launch, man
 
 The Seqera Platform helps organizations:
 
-- Launch, manage, and monitor portable Nextflow pipelines from anywhere in real-time
-- Enable non-technical users to run pipelines via the intuitive Launchpad interface
-- Easily provision and leverage cloud-based compute environments
-- Collaborate and share pipelines and data securely among local and remote teams
-- Easily access libraries of production-proven Nextflow community pipelines available from [nf-core](https://nf-co.re/)
-- Automate complex tasks as part of broader enterprise processes
+- Launch, manage, and monitor portable Nextflow pipelines from anywhere in real-time.
+- Enable non-technical users to run pipelines via the intuitive Launchpad interface.
+- Easily provision and leverage cloud-based compute environments.
+- Collaborate and share pipelines and data securely among local and remote teams.
+- Easily access libraries of production-proven Nextflow community pipelines available from [nf-core](https://nf-co.re/).
+- Automate complex tasks as part of broader enterprise processes.
 
 ## Deployment methods
 
 Seqera offers two deployment methods:
 
 - **Seqera Cloud**: A version of the application available as a SaaS solution, hosted on Seqera's infrastructure.
-- **Seqera Enterprise**: A lightweight, deployable version of the application that can be hosted on our customers' infrastructure.
+- **Seqera Enterprise**: A lightweight, deployable version of the application, hosted on your infrastructure.
 
 ## Core components
 

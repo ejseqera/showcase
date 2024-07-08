@@ -1,6 +1,6 @@
-# Run Information
+# Run information
 
-When you launch a pipeline, you are navigated to the **Runs** tab which contains all executed workflows, with your submitted run at the top of the list. 
+When you launch a pipeline, you're navigated to the **Runs** tab which contains all executed workflows. Your submitted run is at the top of the list. 
 
 Each new or resumed job is given a random name, such as "grave_williams". Each row corresponds to a specific job. As a job executes, it can transition through the following states:
 
@@ -20,24 +20,19 @@ Each new or resumed job is given a random name, such as "grave_williams". Each r
 
 ## 1. View the run details for nf-core/rnaseq
 
-The pipeline launched in the [previous step](./004_launching_pipelines.md) will take some time to begin running. In the meantime, we can take a look at a previous successful run to observe the run details.
+The pipeline launched in the [previous step](./004_launching_pipelines.md) will take some time to begin running. In the meantime, you can take a look at a previous successful run to observe the run details.
 
 Select a previous run to view the **Run details** page.
 
 ## 2. Run details page
 
-As the pipeline begins to run, you will see the run details populating with the following tabs:
+As the pipeline begins to run, you'll see the run details populating with the following tabs:
 
 - **Command-line**: The Nextflow command invocation that would be used to run the pipeline. This contains details about the version (through the `-r` flag), and profile, if specified (through the `-profile` flag).
-
 - **Parameters**: The exact set of parameters used in the execution. This is helpful for reproducing results of a previous run.
-
 - **Resolved Nextflow configuration**: The full Nextflow configuration settings used for the run. This includes parameters, but also settings specific to task execution (such as memory, CPUs, and output directory).
-
 - **Execution Log**: A summarized Nextflow log providing information about the pipeline and the status of the run.
-
 - **Datasets**: Link to datasets, if any were used in the run.
-
 - **Reports**: View outputs of your pipeline directly in the Platform.
 
 
@@ -84,7 +79,7 @@ The run details page includes general information about who executed the run and
 ![General run information](assets/general-run-details.gif)
 ///
 
-The 'General' panel displays top-level information about a pipeline run:
+The **General** panel displays top-level information about a pipeline run:
 
 - Unique workflow run ID
 - Workflow run name
@@ -94,7 +89,7 @@ The 'General' panel displays top-level information about a pipeline run:
 - Username of the launcher
 - Work directory path
 
-## 5. View details for a Task
+## 5. View details for a task
 
 Scroll down the page and you will see:
 
@@ -107,26 +102,19 @@ The task details table can provide further information on every step in the pipe
 
 ## 6. Task details window
 
-Select a task in the task table to open the **Task details** dialog. The dialog has three tabs: About, Execution log and Data Explorer.
+Select a task in the task table to open the **Task details** dialog. The dialog has three tabs: About, Execution log, and Data Explorer.
 
 **About**
 
 The About tab provides the following information:
 
 1. **Name**: Process name and tag
-
 2. **Command**: Task script, defined in the pipeline process
-
 3. **Status**: Exit code, task status, number of attempts
-
 4. **Work directory**: Directory where the task was executed
-
 5. **Environment**: Environment variables that were supplied to the task
-
 6. **Execution time**: Metrics for task submission, start, and completion time
-
 7. **Resources requested**: Metrics for the resources requested by the task
-
 8. **Resources used**: Metrics for the resources used by the task
 
 
@@ -144,11 +132,11 @@ The Execution log tab provides a real-time log of the selected task's execution.
 
 If a task fails, a good place to begin troubleshooting is the task's work directory.
 
-Nextflow hash-addresses each task of the pipeline and creates unique directories based on these hashes. Instead of navigating through a bucket on the Cloud console or filesystem to find the contents of this directory, we can make use of the 'Data Explorer' tab in the Task window.
+Nextflow hash-addresses each task of the pipeline and creates unique directories based on these hashes. Instead of navigating through a bucket on the Cloud console or filesystem to find the contents of this directory, we can make use of the **Data Explorer** tab in the **Task** window.
 
-The Data Explorer tab allows you to view the log files and output files generated for each task in it's working directory, directly within Platform.
+The **Data Explorer** tab allows you to view the log files and output files generated for each task in its working directory, directly within Platform.
 
-You can view, download, and retrieve the link for these intermediate files stored in the Cloud from the Explorer tab, making troubleshooting much simpler.
+You can view, download, and retrieve the link for these intermediate files stored in the Cloud from the **Explorer** tab, making troubleshooting much simpler.
 
 
 /// details | Click to show animation

@@ -1,6 +1,6 @@
 ## Login 
 
-Log in to [Seqera Cloud](https://cloud.seqera.io/login), either through a GitHub or Google account, or by providing an email address. If you are signing in for the first time, Seqera Cloud will send an authentication link to the email address, enabling you to login.
+Log in to [Seqera Cloud](https://cloud.seqera.io/login), through a GitHub login, Google account, or by providing an email address. If you're signing in for the first time, Seqera Cloud will send an authentication link to your email address, enabling you to login.
 
 /// details | Click to show animation
     type: example
@@ -11,9 +11,9 @@ Log in to [Seqera Cloud](https://cloud.seqera.io/login), either through a GitHub
 
 ## Organizations and workspaces
 
-All resources in the Seqera Platform are managed within organizations, typically named the same as your organization, such as Seqera or Johnson and Johnson. An organization can contain multiple workspaces. Each workspace is an isolated environment that can consist of different users, pipelines, credentials and compute infrastructure. Workspaces enable user access to the Platform depending on the organizational needs. Typically, teams of colleagues or collaborators will have access to one or more workspaces, and all resources in a workspace (pipelines, compute environments, datasets, etc.) are shared by members of that workspace.
+All resources in the Seqera Platform are managed within organizations, typically named the same as your organization, such as Seqera or Johnson and Johnson. An organization can contain multiple workspaces. Each workspace is an isolated environment that can consist of different users, pipelines, credentials, and compute infrastructure. Workspaces enable user access to the Platform depending on the organizational needs. Typically, teams of colleagues or collaborators will have access to one or more workspaces, and all resources in a workspace (pipelines, compute environments, datasets, etc.) are shared by members of that workspace.
 
-With workspaces, organization owners can:
+Using workspaces, you can:
 
 - Help research teams segment their work depending on their needs.
 - Enable teams to focus on specific activities, such as core R&D or clinical trials with PII, which need to be kept secure.

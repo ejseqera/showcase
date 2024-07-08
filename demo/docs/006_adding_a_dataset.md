@@ -1,6 +1,6 @@
 # Datasets
 
-Most bioinformatics pipelines require an input of some sort. This is typically a samplesheet where each row consists of a sample, the location of files for that sample (such as fastq files), and other sample details.
+Most bioinformatics pipelines require an input of some sort. This is typically a samplesheet where each row consists of a sample, the location of files for that sample (such as FASTQ files), and other sample details.
 
 In the cloud, users may need to upload this samplesheet to a bucket or retrieve the path to this file on a shared filesystem to use it as pipeline input.
 
@@ -8,9 +8,9 @@ Instead, these samplesheets can be made easily accessible through the **Datasets
 
 ## 1. Download the nf-core/rnaseq test samplesheet
 
-The [nf-core/rnaseq](https://github.com/nf-core/rnaseq) pipeline works with input datasets (samplesheets) containing sample names, fastq file locations, and indications of strandedness. The Seqera Community Showcase sample dataset for _nf-core/rnaseq_ looks like this:
+The [nf-core/rnaseq](https://github.com/nf-core/rnaseq) pipeline works with input datasets (samplesheets) containing sample names, FASTQ file locations, and indications of strandedness. The Seqera Community Showcase sample dataset for _nf-core/rnaseq_ looks like this:
 
-**Example rnaseq dataset**
+**Example RNAseq dataset**
 
 <center>
 
@@ -32,16 +32,16 @@ Download the nf-core/rnaseq [samplesheet_test.csv](samplesheet_test.csv) provide
 
 From the **Datasets** tab, select **Add Dataset**.
 
-![Add a Dataset](assets/sp-cloud-add-a-dataset.gif)
+![Add a dataset](assets/sp-cloud-add-a-dataset.gif)
 
 Specify the following dataset details:
 
 - A **Name** for the dataset, such as 'nf-core-rnaseq-test-dataset'
 - A **Description**
 - Select the **First row as header** option
-- Select **Upload file** and browse to the CSV file downloaded from this repository. This CSV file specifies the paths to 7 small FASTQ files for a sub-sampled Yeast RNAseq dataset.
+- Select **Upload file** and browse to the CSV file downloaded from this repository. This CSV file specifies the paths to 7 small FASTQ files for a sub-sampled Yeast RNAseq dataset
 
-Notice the location of the files point to a path on S3. This could also be a path to a shared filesystem, if using an HPC compute environment. Using the path to the files, Nextflow will stage the files into the task working directory. 
+Note the location of the files point to a path on S3. If you're using an HPC compute environment, this could also be a path to a shared filesystem. Using the path to the files, Nextflow will stage the files into the task working directory. 
 
 
 

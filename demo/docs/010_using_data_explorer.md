@@ -1,12 +1,10 @@
 # Data Explorer
 
-When running pipelines in the Cloud, users typically need access to buckets and blob storage to view pipeline results and upload files (such as samplesheets and reference data) for analysis. Managing credentials and permissions for multiple users, as well as training users to navigate Cloud consoles and CLIs, can be complicated. Instead, users can view their data directly through Data Explorer.
+When running pipelines in the Cloud, you typically need access to buckets and blob storage to view pipeline results and upload files (such as samplesheets and reference data) for analysis. Managing credentials and permissions for multiple users, as well as training users to navigate Cloud consoles and CLIs, can be complicated. Instead, you can view data directly through Data Explorer.
 
 With Data Explorer, you can browse and interact with remote data repositories from organization workspaces in Seqera Platform. It supports AWS S3, Azure Blob Storage, and Google Cloud Storage repositories.
 
 ## View pipeline outputs in Data Explorer
-
-In Data Explorer, you can:
 
   - **View bucket details**:
     View the cloud provider, bucket address, and credentials by selecting the information icon next to a bucket in the Data Explorer list.
@@ -30,7 +28,7 @@ In Data Explorer, you can:
     ///
 
    - **Preview files**: 
-    Select a file to open a preview window that includes a **Download** button. For example, we can use Data Explorer to view the results of the nf-core/rnaseq pipeline that we executed. Specifically, we can view the resultant gene counts of the salmon quantification step:
+    Select a file to open a preview window that includes a **Download** option. For example, we can use Data Explorer to view the results of the nf-core/rnaseq pipeline that we executed. Specifically, we can view the resultant gene counts of the salmon quantification step:
 
 
 
@@ -41,6 +39,7 @@ In Data Explorer, you can:
     ///
 
 ## Configure a bucket to browser in Data Explorer
+
 Data Explorer also enables you to add public cloud storage buckets to view and use data from resources such as:
 
 - [The Cancer Genome Atlas (TCGA)](https://registry.opendata.aws/tcga/)
@@ -51,10 +50,12 @@ Data Explorer also enables you to add public cloud storage buckets to view and u
 - [Genome Aggregation Database (gnomAD)](https://cloud.google.com/life-sciences/docs/resources/public-datasets/gnomad) 
 
 ## Add a cloud bucket
+
 Select **Add cloud bucket** from the Data Explorer tab to add individual buckets (or directory paths within buckets). 
 
 ## Fill in bucket details
-Specify the Provider, Bucket path, Name, Credentials, and Description, then select **Add**. For public cloud buckets, select Public from the Credentials dropdown menu.
+
+Specify the **Provider**, **Bucket path**, **Name**, **Credentials**, and **Description**, then select **Add**. For public cloud buckets, select **Public** from the **Credentials** dropdown menu.
 
 
   /// details | Click to show animation

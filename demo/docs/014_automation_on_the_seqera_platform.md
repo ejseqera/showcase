@@ -4,11 +4,11 @@ Seqera Platform provides multiple methods of programmatic interaction allowing y
 
 The Seqera Platform public API is the lowest-level method of programmatic interaction. All operations available in the user interface can be achieved through the API. 
 
-The API can be used to trigger the launch of pipelines based on a file event (such as the upload of a file to a bucket) or completion of a previous run.
+The API can be used to trigger the launch of pipelines based on a file event (such uploading a file to a bucket) or completion of a previous run.
 
 The API can be accessed from `https://api.cloud.seqera.io`.
 
-The full list of endpoints is available in Seqera's OpenAPI schema found [here](https://cloud.seqera.io/openapi/index.html). The API requires an authentication token to be specified in every API request. This can be created in your user menu under **Your tokens**.
+The full list of endpoints is available in Seqera's OpenAPI schema found [here](https://cloud.seqera.io/openapi/index.html). The API requires an authentication token to be specified in every API request. This can be created in the user menu under **Your tokens**.
 
 
 /// details | Click to show animation
@@ -23,7 +23,7 @@ The token is only displayed once. Store your token in a secure place. Use this t
 /// details | Advanced
         type: info    
 
-For an example of how to use the API to launch a pipeline, we can make the following request using cURL: 
+For an example of how to use the API to launch a pipeline, you can make the following request using cURL: 
 
     
     curl -X POST "https://api.cloud.seqera.io/workflow/launch?workspaceId=38659136604200" \
@@ -65,7 +65,7 @@ For example, to launch the hello pipeline using the CLI:
 
 ### 3. seqerakit
 
-`seqerakit` is a Python wrapper for the Seqera Platform CLI which can be leveraged to automate the creation of all of the entities in Seqera Platform via a YAML format configuration file. It can be used to automate the creation of entities, from organizations and workspaces to pipelines and compute environments, and the execution of workflows in one YAML.
+`seqerakit` is a Python wrapper for the Seqera Platform CLI which can be leveraged to automate the creation of all of the entities in Seqera Platform via a YAML format configuration file. It can be used to automate the creation of entities, from organizations and workspaces to pipelines and compute environments, and the execution of workflows in one file.
 
 The key features are:
 
@@ -93,6 +93,7 @@ Then run seqerakit with:
 ///
 
 ## Resources
+
 Common use cases for the automation methods above include automatically executing a pipeline as data arrives from a sequencer, or integrating Seqera Platform into a broader customer facing application. For a step-by-step guide to set up these automation methods, see [Workflow automation for Nextflow pipelines](https://seqera.io/blog/workflow-automation/).
 
 For examples on how to use automation to chain workflows together, see [Automating pipeline execution with Nextflow and Tower](https://seqera.io/blog/automating-workflows-with-nextflow-and-tower/).

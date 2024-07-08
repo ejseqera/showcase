@@ -6,10 +6,9 @@ Nextflow supports Docker containers, but pipeline developers often face challeng
 
 Projects like BioContainers offer pre-built images for Bioconda tools, but have limitations. Wave, our open-source on-demand container provisioning service, simplifies this process by allowing Nextflow developers to reference conda packages or a bundled Dockerfile to build containers on the fly.
 
-Seqera Containers enhance the Wave experience by allowing users to enter the names of their desired tools and instantly receive a container URI, usable for any purpose. The image is stored in a cache provided by AWS, ensuring reproducibility and availability for future runs without expiry.
+Seqera Containers enhance the Wave experience and allow you to enter the names of your desired tools and instantly receive a container URI, usable for any purpose. The image is stored in a cache provided by AWS, ensuring reproducibility and availability for future runs without expiry.
 
-
-Users can:
+You can:
 
 1. Request any combination of packages
 
@@ -27,7 +26,7 @@ Users can:
     ![Multi-arch containers](assets/seqera-containers-arch-settings.gif)
     ///
 
-3. Users can create Singularity images and download `.sif` files directly
+3. Create Singularity images and download `.sif` files directly
 
     /// details | Click to show animation
         type: example
