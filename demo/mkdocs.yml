@@ -115,5 +115,6 @@ nav:
       - Automation on the Seqera Platform: 014_automation_on_the_seqera_platform.md
       - Seqera Pipelines: 015_seqera_pipelines.md
       - Seqera Containers: 016_seqera_containers.md
-      - Walkthrough summary: 017_walkthrough_summary.md
-      - Resources: 018_resources.md
+      - Seqera Compute: 017_seqera_compute.md
+      - Walkthrough summary: 018_walkthrough_summary.md
+      - Resources: 019_resources.md
